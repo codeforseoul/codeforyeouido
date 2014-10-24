@@ -1,0 +1,32 @@
+body{
+    color: gray;
+    font-size: 12pt;
+}
+body, small, div, p, span{
+    font-family:AppleSDGothicNeo-Regular,Dotum,AppleSDGothic,"Apple SD Gothic Neo",AppleGothic;
+}
+
+/* 
+ * common 
+ ************************/
+/* font */ 
+.bold{ font-weight: 800; }
+/* layout */
+.pull-right{ float: right; }
+.pull-left{ float: left; }
+/* component */
+.badge{
+    display: inline-block;
+    padding: 3px 7px;
+    background-color: #777;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    font-weight: 700;
+    min-width: 10px;
+    color: #FFF;
+}
+
+/* whole layout */
