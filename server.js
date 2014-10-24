@@ -8,16 +8,6 @@ var server = require('http').createServer(app);
 
 var config = require('./config')[app.get('env')];
 
-/*
- * connect databases
- * -------------------------------------------------------*/
-// mongo db
-var mongoose = require('mongoose');
-mongoose.connection.on('error', function(err){
-    console.log("Failure to connect 'MongoDB'".red);
-    process.exit(-1);
-});
-mongoose.connect(config.db.mongo.url);
 
 /*
  * import external configuration information

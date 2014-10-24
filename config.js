@@ -14,10 +14,6 @@ module.exports = {
         path:{
             root: __dirname,
             view: __dirname + '/public',
-            
-            fullsize_image: __dirname + '/img/fullsize/',
-            thunbnail_image: __dirname + '/img/thumbnail/',
-
             api: __dirname + '/api',
         },
     }
