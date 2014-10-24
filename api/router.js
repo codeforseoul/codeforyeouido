@@ -1,14 +1,14 @@
-//var express = require('express')
-var view = require('./controller/page'),
-    search = require('./controller/search'),
-    user = require('./controller/user');
-    manage_img = require('./controller/manage_img');
+var view = require('./controller/page');
+var search= require('./controller/search');
 
 module.exports = function(app, config){
-    //page
+    //index
     app.get('/', view.home);
-/*
-    app.get('/keyword/:keyword', view.keyword)
-    app.get('/persong/:name', view.person)
-    */
+    
+    //searching
+    app.get('/timeline', view.timeline)
+    app.get('/keyword', search.keyword_all)
+    app.get('/keyword/:keyword', search.keyword)
+    app.get('/name', search.name_all)
+    app.get('/name/:name', search.name)
 }

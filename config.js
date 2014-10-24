@@ -1,21 +1,21 @@
 module.exports = {
-    development:{
-        //server config
-        port: 9999,
+    //server config
+    port: 8080,
 
-        //database
-        db:{
-            mongo:{
-                url: 'localhost',
-            },
-        },
+    //database
+    db:{
+       mysql: {
+            host: 'localhost',
+            user: 'root',
+            password: 'codeforseoul',
+            database: 'codeforyeouido'
+        }
+    },
 
-        //dir path
-        path:{
-            root: __dirname,
-            view: __dirname + '/public',
-            api: __dirname + '/api',
-        },
-    }
-
+    //dir path
+    path:{
+        root: __dirname,
+        view: __dirname + '/public',
+        api: __dirname + '/api',
+    },
 }
