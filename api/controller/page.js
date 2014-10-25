@@ -9,7 +9,7 @@ exports.timeline = function(req, res){
 }
 
 exports.keyword = function(req, res){
-    return res.render('keywrod.ejs', {});
+    return res.render('keyword.ejs', {});
 }
 
 exports.name = function(req, res){
