@@ -20,7 +20,7 @@ exports.keyword = function(req, res){
             res.send('a');
             return;
         }
-
+        
         connection.query("SELECT * from test", [], function(err, result){
             if(err){
                 res.send('b');
