@@ -24,4 +24,22 @@
 	padding: 10px;
 	float: left;
 	width: 100%;
+	background: #000;
+	margin-top: 10px;
+	text-align: center;
+	font-family: 'Nanum Gothic', serif;
+}
+
+.foot>a:HOVER {
+	color: #d3d3d3;
+	text-decoration: none;
+}
+
+.foot>a {
+	color: #fff;
+}
+
+.foot>p {
+	color: #d3d3d3;
+	padding: 10px 10px 0 10px;
 }
