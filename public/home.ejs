@@ -1,4 +1,5 @@
 
+<% include /ejs/header.ejs %>
     <div id="container">
         <header>
             <div id="header-content">
@@ -24,92 +25,14 @@
         <!--트윗내용-->
         <div id="content">
             <article>
-               <section class="first">
-                   <div class="tweet">
-                       <img src="" />
-                       <p>testest</p>
-                   </div>
-                   <div class="tweet">
-                       <img src="" />
-                       <p>testest</p>
-                   </div>
-                   <div class="tweet">
-                       <img src="" />
-                       <p>testest</p>
-                   </div>
-               </section>
-                <section class="second">
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
+            <% for(var i=0; i<results.length; i++){ %>
+            <% for(var j=0; j<results[i].length; j++){ %>
+                <section>
+                    <p><%= results[i][j].doc %> </p>
+                    <%= results[i][j].doc_date %> 
                 </section>
-                <section class="third">
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                </section>
-                <section class="fourth">
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                </section>
-                <section class="fifth">
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                </section>
-                <section class="sixth">
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                    <div class="tweet">
-                        <img src="" />
-                        <p>testest</p>
-                    </div>
-                </section>
-                
-
+            <% } %>
+            <% } %>
             </article>
         </div>
 
