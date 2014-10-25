@@ -1,7 +1,7 @@
 var contentPage_path = 'content/'
 
 exports.home = function(req, res){
-    return res.render('home.ejs', {});
+    return res.render('home.ejs', {text : "hello world"});
 }
 
 exports.timeline = function(req, res){

@@ -1,27 +1,15 @@
-.content_wrapper{
-    width: 1000px;
-    margin: 0 auto;
+.head {
+	padding: 10px;
 }
 
-.carousel .item{
-    height: 400px;
-    overflow: hidden;
-}
-.carousel .item img{
-    width: 100%;
-}
-#home_wrapper > .yellow{
-    background-color: #FFC31D;
-    color: #FFF;
-}
-#home_wrapper > .gray{
-    background- #363839;
-    color: #FFF;
+.body-item {
+	float: left;
+	width: 50%;
+	padding: 10px;
 }
 
-#home_wrapper > div > .content_wrapper{
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(0,0,0,.1);
-    border: none;
-    padding: 20px 0 10px;
+.foot {
+	padding: 10px;
+	float: left;
+	width: 100%;
 }
